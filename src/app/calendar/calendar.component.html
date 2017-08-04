@@ -1,0 +1,7 @@
+<ion-grid>
+  <ion-row *ngFor="let week of calendarDays">
+    <ion-col *ngFor="let day of week">
+      <wf-calendar-day [event]="day"></wf-calendar-day>
+    </ion-col>
+  </ion-row>
+</ion-grid>

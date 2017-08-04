@@ -11,4 +11,6 @@ export class HomePage {
 
   }
 
+  date = new Date('07/01/2017');
+
 }

@@ -19,6 +19,7 @@
   "exclude": [
     "node_modules"
   ],
+  "types":["underscore"],
   "compileOnSave": false,
   "atom": {
     "rewriteTsconfig": false
