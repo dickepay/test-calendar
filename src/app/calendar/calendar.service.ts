@@ -24,16 +24,6 @@ export class CalendarService {
       day.isInMonth = moment(date).get('month') === day.date.get('month') ? true : false;
       calendars.push(day);
     }
-    return this.buildCollectionStructure(calendars);
-  }
-
-  private buildCollectionStructure(days){
-    let calendars = [];
-    let index = 0;
-    for (let i = 0; i < (days.length / 7); i++) {
-      calendars.push(days.slice(index, index + 7));
-      index += 7;
-    }
-    return(calendars);
+    return calendars;
   }
 }

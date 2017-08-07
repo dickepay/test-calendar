@@ -7,5 +7,6 @@
 </ion-header>
 
 <ion-content padding>
-  <wf-calendar calendarDate="{{date}}"></wf-calendar>
+  <wf-calendar calendarDate="{{date}}" [calendarEvents]="events" [highlightedDateRange]="schedulePeriod">
+  </wf-calendar>
 </ion-content>

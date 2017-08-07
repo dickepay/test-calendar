@@ -7,6 +7,7 @@ export class CalendarDay  {
   public date: Moment;
   public event : CalendarEvent;
   public isInMonth : boolean;
+  public fallsInRange : boolean;
 
   public isToday(){
     return moment().diff(moment(this.date), 'days');

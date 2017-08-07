@@ -4,11 +4,14 @@ import { PopoverController } from 'ionic-angular';
 
 @Component({
   selector: 'wf-calendar-day',
-  templateUrl: 'calendar-day.component.html'
+  templateUrl: 'calendar-day.component.html',
+  styles:[
+    '.shade{background-color:lightGray}'
+  ]
 })
 
 export class CalendarDayComponent implements OnInit {
-  constructor() { }
+  constructor(public popCtrl : PopoverController) { }
 
   @Input() event;
 
